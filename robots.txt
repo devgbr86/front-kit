@@ -1,0 +1,20 @@
+# robots.txt - modelo genérico
+# Arquivo deve ficar em: https://www.seusite.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Bloquear áreas privadas
+Disallow: /admin/
+Disallow: /login/
+Disallow: /painel/
+Disallow: /checkout/
+Disallow: /api/
+Disallow: /config/
+
+# Bloquear parâmetros específicos (opcional)
+Disallow: /*?preview=
+Disallow: /*?sort=
+
+# Sitemap
+Sitemap: https://www.seusite.com/sitemap.xml
